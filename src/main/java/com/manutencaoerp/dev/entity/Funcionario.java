@@ -64,5 +64,7 @@ public class Funcionario {
     @Getter
     private List<OrdemServico> ordemServicoList;
 
+    public Funcionario(){}
+
 
 }

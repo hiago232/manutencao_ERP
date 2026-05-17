@@ -30,4 +30,6 @@ public class Equipamento {
     @JsonManagedReference
     @Getter
     private List<OrdemServico> ordemServicoList;
+
+    public Equipamento(){}
 }

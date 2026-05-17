@@ -26,4 +26,10 @@ public class OrdemServico {
     @ManyToOne(fetch = FetchType.LAZY)
     @JsonBackReference
     private Equipamento equipamento;
+
+    @OneToOne(mappedBy = "ordemServico",cascade = CascadeType.ALL,orphanRemoval = true)
+    private Manutencao manutencao;
+
+
+    public OrdemServico(){}
 }
