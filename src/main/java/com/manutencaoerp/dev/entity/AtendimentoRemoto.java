@@ -1,5 +1,6 @@
 package com.manutencaoerp.dev.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,6 +19,12 @@ public class AtendimentoRemoto {
     @Getter
     @Setter
     private Integer atendimentoRemotoId;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JsonBackReference
+    @Getter
+    @Setter
+    private OrdemServico ordemServico;
 
     @Column(name = "problema_relatado",nullable = false)
     @Getter
