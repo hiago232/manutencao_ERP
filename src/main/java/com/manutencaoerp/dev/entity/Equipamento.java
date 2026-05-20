@@ -22,6 +22,11 @@ public class Equipamento {
     @Setter
     private Integer equipamentoId;
 
+    @Column(name = "serial",length = 50,nullable = false)
+    @Getter
+    @Setter
+    private String serial;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JsonBackReference
     private Cliente cliente;
@@ -31,10 +36,11 @@ public class Equipamento {
     @Getter
     private List<OrdemServico> ordemServicoList;
 
-    @Column(name = "serial",length = 50,nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JsonBackReference
     @Getter
     @Setter
-    private String serial;
+    private Fabricante fabricante;
 
     public Equipamento(){}
 }

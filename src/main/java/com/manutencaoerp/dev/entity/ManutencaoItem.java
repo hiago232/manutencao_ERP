@@ -22,5 +22,11 @@ public class ManutencaoItem {
     @Setter
     private Manutencao manutencao;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JsonBackReference
+    @Getter
+    @Setter
+    private Item item;
+
     public ManutencaoItem(){}
 }

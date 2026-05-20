@@ -6,21 +6,21 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "servico_local_item")
-public class ServicoLocalItem {
+@Table(name = "pedido_compra_item")
+public class PedidoCompraItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "servico_local_item_id",unique = true)
+    @Column(name = "pedido_compra_item_id")
     @Getter
     @Setter
-    private Integer servicoLocalItemId;
+    private Integer pedidoCompraItemId;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JsonBackReference
     @Getter
     @Setter
-    private ServicoLocal servicoLocal;
+    private PedidoCompra pedidoCompra;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JsonBackReference
@@ -28,5 +28,5 @@ public class ServicoLocalItem {
     @Setter
     private Item item;
 
-    public ServicoLocalItem(){}
+    public PedidoCompraItem(){}
 }
