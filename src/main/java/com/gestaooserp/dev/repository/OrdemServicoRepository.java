@@ -1,6 +1,6 @@
-package com.manutencaoerp.dev.repository;
+package com.gestaooserp.dev.repository;
 
-import com.manutencaoerp.dev.entity.OrdemServico;
+import com.gestaooserp.dev.entity.OrdemServico;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface OrdemServicoRepository extends JpaRepository<OrdemServico,Integer> {

@@ -1,4 +1,4 @@
-package com.manutencaoerp.dev;
+package com.gestaooserp.dev;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

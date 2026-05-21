@@ -1,4 +1,4 @@
-package com.manutencaoerp.dev.entity;
+package com.gestaooserp.dev.entity;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

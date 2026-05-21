@@ -1,11 +1,10 @@
-package com.manutencaoerp.dev.entity;
+package com.gestaooserp.dev.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 

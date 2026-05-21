@@ -1,14 +1,13 @@
-package com.manutencaoerp.dev.service;
+package com.gestaooserp.dev.service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.manutencaoerp.dev.repository.OrdemServicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.manutencaoerp.dev.entity.ServicoLocal;
-import com.manutencaoerp.dev.repository.ServicoLocalRepository;
+import com.gestaooserp.dev.entity.ServicoLocal;
+import com.gestaooserp.dev.repository.ServicoLocalRepository;
 
 /*
  * TODO:

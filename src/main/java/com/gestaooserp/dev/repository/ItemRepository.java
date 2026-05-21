@@ -1,6 +1,6 @@
-package com.manutencaoerp.dev.repository;
+package com.gestaooserp.dev.repository;
 
-import com.manutencaoerp.dev.entity.Item;
+import com.gestaooserp.dev.entity.Item;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ItemRepository extends JpaRepository<Item,Integer> {

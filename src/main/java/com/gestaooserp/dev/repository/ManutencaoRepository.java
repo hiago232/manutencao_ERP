@@ -1,6 +1,6 @@
-package com.manutencaoerp.dev.repository;
+package com.gestaooserp.dev.repository;
 
-import com.manutencaoerp.dev.entity.Manutencao;
+import com.gestaooserp.dev.entity.Manutencao;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ManutencaoRepository extends JpaRepository<Manutencao,Integer> {

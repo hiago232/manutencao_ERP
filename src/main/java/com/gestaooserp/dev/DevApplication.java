@@ -1,4 +1,4 @@
-package com.manutencaoerp.dev;
+package com.gestaooserp.dev;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

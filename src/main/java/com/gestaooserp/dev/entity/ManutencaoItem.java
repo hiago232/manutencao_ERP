@@ -1,4 +1,4 @@
-package com.manutencaoerp.dev.entity;
+package com.gestaooserp.dev.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;

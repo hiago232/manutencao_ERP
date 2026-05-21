@@ -1,6 +1,6 @@
-package com.manutencaoerp.dev.repository;
+package com.gestaooserp.dev.repository;
 
-import com.manutencaoerp.dev.entity.Estoque;
+import com.gestaooserp.dev.entity.Estoque;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface EstoqueRepository extends JpaRepository<Estoque,Integer> {
