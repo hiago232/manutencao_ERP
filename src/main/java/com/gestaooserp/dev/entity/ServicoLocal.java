@@ -112,9 +112,6 @@ public class ServicoLocal {
     public ServicoLocal(){}
 
 
-
-
-
-
-    
+    public ServicoLocal(ServicoLocal servicoLocal) {
+    }
 }
