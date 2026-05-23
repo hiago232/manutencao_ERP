@@ -53,9 +53,8 @@ public class OrdemServicoService {
     public OrdemServico update(Long id,OrdemServico ordemServico){
         if (ordemServicoRepository.findById(id).isPresent()) {
             return ordemServicoRepository.save(ordemServico);
-        }else{
-            return null;
         }
+        return null;
     }
 
     public Boolean delete(Long id){
@@ -63,8 +62,8 @@ public class OrdemServicoService {
         if(ordemServico != null){
             ordemServicoRepository.delete(ordemServico);
             return true;
-        }else{
-            return false;
         }
+        return false;
+
     }
 }

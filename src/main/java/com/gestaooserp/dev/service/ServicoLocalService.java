@@ -44,9 +44,9 @@ public class ServicoLocalService {
     public ServicoLocal updateServicoLocal(Long id, ServicoLocal servicoLocal){
         if (servicoLocalRepository.findById(id).isPresent()){
             return servicoLocalRepository.save(servicoLocal);
-        }else{
-            return null;
         }
+        return null;
+
     }
 
     public Boolean delete(Long id){
@@ -54,9 +54,9 @@ public class ServicoLocalService {
         if(servicoLocal != null){
             servicoLocalRepository.delete(servicoLocal);
             return true;
-        }else{
-            return false;
         }
+        return false;
+
 
     }
 

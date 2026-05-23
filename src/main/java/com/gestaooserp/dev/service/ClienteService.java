@@ -41,9 +41,8 @@ public class ClienteService {
     public Cliente update(Long id,Cliente cliente){
         if(clienteRepository.findById(id).isPresent()){
             return clienteRepository.save(cliente);
-        }else{
-            return null;
         }
+        return null;
     }
 
     public Boolean delete (Long id){
@@ -51,8 +50,7 @@ public class ClienteService {
         if(cliente != null){
             clienteRepository.delete(cliente);
             return true;
-        }else{
-            return false;
         }
+        return false;
     }
 }
