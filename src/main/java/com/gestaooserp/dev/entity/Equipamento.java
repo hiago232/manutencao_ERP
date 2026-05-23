@@ -20,7 +20,7 @@ public class Equipamento {
     @Column(name = "equipamento_id")
     @Getter
     @Setter
-    private Integer equipamentoId;
+    private Long equipamentoId;
 
     @Column(name = "serial",length = 50,nullable = false)
     @Getter
@@ -43,4 +43,8 @@ public class Equipamento {
     private Fabricante fabricante;
 
     public Equipamento(){}
+
+    public Equipamento(Equipamento equipamento) {
+
+    }
 }
