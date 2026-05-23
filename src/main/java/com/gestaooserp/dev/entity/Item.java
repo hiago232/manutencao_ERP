@@ -17,7 +17,7 @@ public class Item {
     @Column(name = "insumo_id",unique = true,nullable = false)
     @Getter
     @Setter
-    private Integer insumoId;
+    private Long insumoId;
 
     @Column(name = "nome",length = 50, nullable = false)
     @Getter
@@ -58,4 +58,7 @@ public class Item {
 
     public Item(){}
 
+    public Item(Item item) {
+
+    }
 }
