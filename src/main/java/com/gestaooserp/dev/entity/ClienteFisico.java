@@ -29,5 +29,8 @@ public class ClienteFisico extends Cliente{
     private LocalDate nascimento;
 
     public ClienteFisico(){}
+
+    public ClienteFisico(ClienteFisico clienteFisico) {
+    }
 }
 
