@@ -32,4 +32,7 @@ public class ClienteJuridico extends Cliente{
 
     public ClienteJuridico(){}
 
+    public ClienteJuridico(ClienteJuridico clienteJuridico) {
+
+    }
 }

@@ -22,6 +22,7 @@ public class ClienteFisicoService {
 
     private final ClienteFisicoRepository clienteFisicoRepository;
 
+    @Autowired
     public ClienteFisicoService(ClienteFisicoRepository clienteFisicoRepository){
         this.clienteFisicoRepository = clienteFisicoRepository;
     }
