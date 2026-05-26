@@ -4,6 +4,8 @@ package com.gestaooserp.dev.controller;
  * TODO:
  * - Implementar DTOs para requests/responses
  * - Implementar anotation @Valid para validações
+ * - Integrar tratamento global de exceções
+ * - Melhorar separação entre domínio e camada HTTP
  */
 
 import com.gestaooserp.dev.entity.AtendimentoRemoto;
@@ -16,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/local")
+@RequestMapping("/atendimento-remoto")
 public class AtendimentoRemotoController {
 
     @Autowired

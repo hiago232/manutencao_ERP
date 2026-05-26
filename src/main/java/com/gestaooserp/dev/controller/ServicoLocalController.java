@@ -22,7 +22,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 
 
 @RestController
-@RequestMapping("/local")
+@RequestMapping("/servico-local")
 public class ServicoLocalController {
 
     @Autowired
