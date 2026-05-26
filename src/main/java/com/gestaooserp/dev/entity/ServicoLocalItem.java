@@ -14,7 +14,7 @@ public class ServicoLocalItem {
     @Column(name = "servico_local_item_id",unique = true)
     @Getter
     @Setter
-    private Integer servicoLocalItemId;
+    private Long servicoLocalItemId;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JsonBackReference
@@ -29,4 +29,8 @@ public class ServicoLocalItem {
     private Item item;
 
     public ServicoLocalItem(){}
+
+    public ServicoLocalItem(ServicoLocalItem servicoLocalItem) {
+
+    }
 }
