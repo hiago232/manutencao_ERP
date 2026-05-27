@@ -27,7 +27,7 @@ public class EquipamentoService {
         this.equipamentoRepository = equipamentoRepository;
     }
 
-    public List<Equipamento> equipamentoList(){
+    public List<Equipamento> findAll(){
         List<Equipamento>equipamentoList = equipamentoRepository.findAll();
         return equipamentoList.stream().map(Equipamento::new).collect(Collectors.toList());
     }
