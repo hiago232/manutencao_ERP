@@ -17,7 +17,7 @@ import org.springframework.web.service.annotation.DeleteExchange;
 import java.util.List;
 
 @RestController
-@RequestMapping
+@RequestMapping("/manutencao")
 public class ManutencaoController {
 
     private final ManutencaoService manutencaoService;
